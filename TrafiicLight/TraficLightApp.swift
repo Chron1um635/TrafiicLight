@@ -1,6 +1,6 @@
 //
-//  TrafiicLightApp.swift
-//  TrafiicLight
+//  TraficLightApp.swift
+//  TraficLight
 //
 //  Created by Максим Назаров on 06.10.2024.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct TrafiicLightApp: App {
+struct TraficLightApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

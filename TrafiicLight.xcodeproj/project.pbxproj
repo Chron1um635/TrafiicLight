@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		22326D222CB2E6C8008C26B3 /* TrafiicLightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22326D212CB2E6C8008C26B3 /* TrafiicLightApp.swift */; };
+		22326D222CB2E6C8008C26B3 /* TraficLightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22326D212CB2E6C8008C26B3 /* TraficLightApp.swift */; };
 		22326D242CB2E6C8008C26B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22326D232CB2E6C8008C26B3 /* ContentView.swift */; };
 		22326D262CB2E6CA008C26B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22326D252CB2E6CA008C26B3 /* Assets.xcassets */; };
 		22326D292CB2E6CA008C26B3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22326D282CB2E6CA008C26B3 /* Preview Assets.xcassets */; };
+		22326D302CB2E70D008C26B3 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22326D2F2CB2E70D008C26B3 /* CircleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		22326D1E2CB2E6C8008C26B3 /* TrafiicLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrafiicLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		22326D212CB2E6C8008C26B3 /* TrafiicLightApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafiicLightApp.swift; sourceTree = "<group>"; };
+		22326D212CB2E6C8008C26B3 /* TraficLightApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraficLightApp.swift; sourceTree = "<group>"; };
 		22326D232CB2E6C8008C26B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		22326D252CB2E6CA008C26B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22326D282CB2E6CA008C26B3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		22326D2F2CB2E70D008C26B3 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,9 @@
 		22326D202CB2E6C8008C26B3 /* TrafiicLight */ = {
 			isa = PBXGroup;
 			children = (
-				22326D212CB2E6C8008C26B3 /* TrafiicLightApp.swift */,
+				22326D212CB2E6C8008C26B3 /* TraficLightApp.swift */,
 				22326D232CB2E6C8008C26B3 /* ContentView.swift */,
+				22326D2F2CB2E70D008C26B3 /* CircleView.swift */,
 				22326D252CB2E6CA008C26B3 /* Assets.xcassets */,
 				22326D272CB2E6CA008C26B3 /* Preview Content */,
 			);
@@ -137,8 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22326D302CB2E70D008C26B3 /* CircleView.swift in Sources */,
 				22326D242CB2E6C8008C26B3 /* ContentView.swift in Sources */,
-				22326D222CB2E6C8008C26B3 /* TrafiicLightApp.swift in Sources */,
+				22326D222CB2E6C8008C26B3 /* TraficLightApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,8 +282,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,9 +291,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Chron1um.TrafiicLight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,8 +315,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,9 +324,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Chron1um.TrafiicLight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
