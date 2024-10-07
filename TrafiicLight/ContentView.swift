@@ -15,23 +15,20 @@ enum CurrentLight {
 
 struct ContentView: View {
     
-    private let lightIsOff = 0.3
-    private let lightIsOn = 1.0
-    
     @State private var redAlpha = 0.3
     @State private var yellowAlpha = 0.3
     @State private var greenAlpha = 0.3
     @State private var currentLight = CurrentLight.red
     @State private var buttonTitle = "START"
     
+    private let lightIsOff = 0.3
+    private let lightIsOn = 1.0
+    
     var body: some View {
         VStack {
-            CircleView(color: .red)
-                .opacity(redAlpha)
-            CircleView(color: .yellow)
-                .opacity(yellowAlpha)
-            CircleView(color: .green)
-                .opacity(greenAlpha)
+            CircleView(color: .red, alpha: redAlpha)
+            CircleView(color: .yellow, alpha: yellowAlpha)
+            CircleView(color: .green, alpha: greenAlpha)
             Spacer()
         }
         .padding()
